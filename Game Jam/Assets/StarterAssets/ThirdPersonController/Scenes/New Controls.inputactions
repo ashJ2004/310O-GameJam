@@ -1,0 +1,54 @@
+{
+    "name": "New Controls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "feb21c9d-b637-4e63-b1e8-943bc0d6cff5",
+            "actions": [
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "28c2e623-12d9-45ab-a5dd-b2f5b13b6ec1",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Exit",
+                    "type": "Button",
+                    "id": "fa9023cd-2c31-420b-bfec-855188d3f5b7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "abe1ac91-1ca5-4450-8ad0-6ae3c1c33b4f",
+                    "path": "<Keyboard>/#(E)",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "57eb6b4f-b1ef-4986-9451-4ef01664c8ea",
+                    "path": "<Keyboard>/#(Z)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Exit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
