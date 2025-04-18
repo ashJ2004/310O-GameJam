@@ -429,6 +429,7 @@
 -analyzer:"D:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Interaction System/FlowerPot.cs"
 "Assets/Interaction System/I Interactable.cs"
+"Assets/Interaction System/I Rideable.cs"
 "Assets/Interaction System/InteractionPromptUI.cs"
 "Assets/Interaction System/Interactor.cs"
 "Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs"

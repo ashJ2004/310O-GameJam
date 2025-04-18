@@ -20,6 +20,7 @@ public class InteractionCameraUI : MonoBehaviour
     public void SetUp(string prompText)
     {
         _promptText.text = prompText;
+        isDisplayed = true;
         _UIPanel.SetActive(true);
     }
     public void Close()
