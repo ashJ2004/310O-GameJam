@@ -30,11 +30,9 @@ public class Interactor : MonoBehaviour
                 if (!_interactionPromptUI.isDisplayed) _interactionPromptUI.SetUp(interactable.InteractionPrompt);
                 if (Keyboard.current.eKey.wasPressedThisFrame)
                 {
-                    Debug.Log("E key has been pressed, interacting with object");
                     if (rideable != null)
                     {
                         objectRiding = _colliders[0].gameObject;
-                        Debug.Log("Entering Object");
                     }
                     interactable.Interact(this);
                 }
@@ -50,7 +48,8 @@ public class Interactor : MonoBehaviour
     public void RideObject(GameObject follow)
     {
         this.gameObject.transform.position = follow.GetComponent<Transform>().position;
+        GameObject.Find("PlayerFollowCamera").GetComponent<CinemachineVirtualCamera>().Follow = follow.transform.parent.Find("ExitLocation/RideableCameraRoot");
+
         this.gameObject.SetActive(false);
-        GameObject.Find("PlayerFollowCamera").GetComponent<CinemachineVirtualCamera>().Follow = follow.GetComponentInParent<Transform>();
     }
 }
