@@ -34,6 +34,7 @@ public class Interactor : MonoBehaviour
                     {
                         objectRiding = _colliders[0].gameObject;
                     }
+                    Debug.Log("Entering: "+ _colliders[0].transform.parent.name);
                     interactable.Interact(this);
                 }
                 
@@ -48,7 +49,7 @@ public class Interactor : MonoBehaviour
     public void RideObject(GameObject follow)
     {
         this.gameObject.transform.position = follow.GetComponent<Transform>().position;
-        GameObject.Find("PlayerFollowCamera").GetComponent<CinemachineVirtualCamera>().Follow = follow.transform.parent.Find("ExitLocation/RideableCameraRoot");
+        GameObject.Find("PlayerFollowCamera").GetComponent<CinemachineVirtualCamera>().Follow = follow.transform.parent.Find(follow.transform.parent.name + "ExitLocation/RideableCameraRoot");
 
         this.gameObject.SetActive(false);
     }

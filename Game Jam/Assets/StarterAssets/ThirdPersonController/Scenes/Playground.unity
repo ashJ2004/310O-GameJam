@@ -361,7 +361,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9330807
+      value: 1.89
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalPosition.y
@@ -369,7 +369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.5634942
+      value: 3.85
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalRotation.w
@@ -401,7 +401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_Name
-      value: FlowerPotController
+      value: FlowerPot
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: CinemachineCameraTarget
@@ -1469,7 +1469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1549889813}
   m_Layer: 0
-  m_Name: ExitLocation
+  m_Name: FlowerPotExitLocation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2150,6 +2150,67 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1001 &5777022659655287851
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2385509116157602865, guid: 4678309d34afd8241886d4d0692b567e, type: 3}
+      propertyPath: m_Name
+      value: Toaster
+      objectReference: {fileID: 0}
+    - target: {fileID: 4929462867085597772, guid: 4678309d34afd8241886d4d0692b567e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 634756216}
+    - target: {fileID: 5028085410942868997, guid: 4678309d34afd8241886d4d0692b567e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.4675064
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028085410942868997, guid: 4678309d34afd8241886d4d0692b567e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028085410942868997, guid: 4678309d34afd8241886d4d0692b567e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.9545078
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028085410942868997, guid: 4678309d34afd8241886d4d0692b567e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028085410942868997, guid: 4678309d34afd8241886d4d0692b567e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028085410942868997, guid: 4678309d34afd8241886d4d0692b567e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028085410942868997, guid: 4678309d34afd8241886d4d0692b567e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028085410942868997, guid: 4678309d34afd8241886d4d0692b567e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028085410942868997, guid: 4678309d34afd8241886d4d0692b567e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028085410942868997, guid: 4678309d34afd8241886d4d0692b567e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4678309d34afd8241886d4d0692b567e, type: 3}
 --- !u!1001 &8345070700268369567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2327,3 +2388,4 @@ SceneRoots:
   - {fileID: 1979352518}
   - {fileID: 746329221}
   - {fileID: 551937066}
+  - {fileID: 5777022659655287851}

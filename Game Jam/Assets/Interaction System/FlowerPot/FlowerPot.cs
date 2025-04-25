@@ -22,14 +22,14 @@ public class FlowerPot : MonoBehaviour, IInteractable,IRideable
     }
     public void Update()
     {
-        if (Keyboard.current.zKey.wasPressedThisFrame)
+        if (Keyboard.current.zKey.wasPressedThisFrame && this.transform.parent.GetComponent<PlayerInput>().isActiveAndEnabled)
         {
             /*exit object
              * 
              */
             player.SetActive(true);
-            player.transform.position = this.transform.parent.Find("ExitLocation").position;
-            Vector3 forwardOffset = this.transform.parent.Find("ExitLocation").forward * 0.6f;  // Adjust the 0.5f as needed
+            player.transform.position = this.transform.parent.Find("FlowerPotExitLocation").position;
+            Vector3 forwardOffset = this.transform.parent.Find("FlowerPotExitLocation").forward * 0.6f;  
             player.transform.position += forwardOffset;
             this.GetComponentInParent<PlayerInput>().enabled = false;
             player.GetComponent<PlayerInput>().enabled = true;
