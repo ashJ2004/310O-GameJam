@@ -15,7 +15,7 @@ public class FlowerAbility : MonoBehaviour
             float delta = raiseSpeed * Time.deltaTime;
             GrowPlant(delta);
         }
-        if(Input.GetKey(KeyCode.LeftShift) && this.GetComponent<PlayerInput>().isActiveAndEnabled && this.transform.Find("ExitLocation").position.y > 3)
+        if(Input.GetKey(KeyCode.LeftShift) && this.GetComponent<PlayerInput>().isActiveAndEnabled && this.transform.Find("FlowerPotExitLocation").position.y > 3)
         {
             float delta = -raiseSpeed * Time.deltaTime;
             GrowPlant(delta);

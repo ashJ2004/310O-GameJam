@@ -11,7 +11,6 @@ public class Toaster : MonoBehaviour, IInteractable, IRideable
     {
         setPlayerPosition(interactor);
         this.gameObject.GetComponentInParent<PlayerInput>().enabled = true;
-        Debug.Log("Entering Toaster!");
         return true;
     }
     public void setPlayerPosition(Interactor interactor)
@@ -26,7 +25,6 @@ public class Toaster : MonoBehaviour, IInteractable, IRideable
            
             player.SetActive(true);
             player.transform.position = this.transform.parent.Find("ToasterExitLocation").position;
-            Debug.Log("Exit Location Parent: " + this.transform.parent.Find("ToasterExitLocation").name);
             Vector3 forwardOffset = this.transform.parent.Find("ToasterExitLocation").forward * 0.6f;
             player.transform.position += forwardOffset;
             this.GetComponentInParent<PlayerInput>().enabled = false;
