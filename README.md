@@ -1,5 +1,9 @@
 # 310O-GameJam
 
+## Video Demo
+
+https://youtu.be/dVIigOz8nyM
+
 ## List of Completed Items
 
 - Working Prototypes of all 3 possessable objects
