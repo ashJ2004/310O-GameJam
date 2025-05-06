@@ -17,6 +17,8 @@ public class Interactor : MonoBehaviour
     private IInteractable interactable;
     private IRideable rideable;
 
+    public bool HasKey = false;
+
     private void Update()
     {
 
@@ -34,7 +36,6 @@ public class Interactor : MonoBehaviour
                     {
                         objectRiding = _colliders[0].gameObject;
                     }
-                    Debug.Log("Entering: "+ _colliders[0].transform.parent.name);
                     interactable.Interact(this);
                 }
                 

@@ -28,10 +28,10 @@ public class FlowerAbility : MonoBehaviour
 
         // Scale other object in +Z direction
         Vector3 scale = objectToScale.localScale;
-        scale.y += delta;
+        scale.z += delta/60;
         objectToScale.localScale = scale;
 
         // Move to stretch in +Z only
-        objectToScale.position += objectToScale.up * (delta / 2f);
+        objectToScale.position += objectToScale.forward * (delta / 2f);
     }
 }
