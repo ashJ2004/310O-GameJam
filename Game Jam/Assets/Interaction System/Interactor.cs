@@ -18,7 +18,6 @@ public class Interactor : MonoBehaviour
     private IRideable rideable;
 
     public bool HasKey = false;
-
     private void Update()
     {
 

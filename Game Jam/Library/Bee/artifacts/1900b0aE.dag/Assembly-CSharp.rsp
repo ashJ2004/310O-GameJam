@@ -428,6 +428,7 @@
 -analyzer:"D:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"D:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Interaction System/Door.cs"
+"Assets/Interaction System/FinishLine.cs"
 "Assets/Interaction System/FlowerPot/FlowerAbility.cs"
 "Assets/Interaction System/FlowerPot/FlowerPot.cs"
 "Assets/Interaction System/Hazard.cs"
