@@ -8,6 +8,7 @@ public class Button : MonoBehaviour
         if (collision.gameObject.CompareTag("Ammo"))
         {
             water.SetActive(false);
+            this.gameObject.SetActive(false);
         }
     }
 }
