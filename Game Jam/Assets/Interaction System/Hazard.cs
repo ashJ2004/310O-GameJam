@@ -27,7 +27,7 @@ public class Hazard : MonoBehaviour
     }
     public void LowerWaterLevel()
     {
-        Debug.Log("LOWERING WATER LEVEL");
+        Debug.Log("LOWERING WATER LEVEL: CURRENT LEVEL: " + waterLevel);
         waterLevel--;
         if (waterLevel == 2)
         {
@@ -42,6 +42,7 @@ public class Hazard : MonoBehaviour
         }
         else
         {
+            Debug.Log("REMOVING WATER FROM AREA COMPLETELY");
             this.gameObject.SetActive(false);
         }
     }

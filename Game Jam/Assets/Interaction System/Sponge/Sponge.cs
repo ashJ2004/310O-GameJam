@@ -38,10 +38,12 @@ public class Sponge : MonoBehaviour, IInteractable, IRideable
         if(Input.GetKey(KeyCode.F) && this.transform.parent.GetComponent<PlayerInput>().isActiveAndEnabled && isInWater && !isFull)
         {
             isFull = true;
+            Debug.Log("FIlling Sponge");
             water.GetComponent<Hazard>().LowerWaterLevel();
         }
         else if (Input.GetKey(KeyCode.F) && this.transform.parent.GetComponent<PlayerInput>().isActiveAndEnabled && isInSink && isFull)
         {
+            Debug.Log("FIlling Drain");
             isFull = false;
         }
     }
