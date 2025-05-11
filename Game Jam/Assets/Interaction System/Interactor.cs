@@ -9,6 +9,7 @@ public class Interactor : MonoBehaviour
     [SerializeField] private float _interactionPointRadius;
     [SerializeField] private LayerMask _interactableMask;
     [SerializeField] private InteractionCameraUI _interactionPromptUI;
+    [SerializeField] public Transform _currentCheckpoint;
 
     private readonly Collider[] _colliders = new Collider[3];
     [SerializeField] private int numFound;
@@ -44,6 +45,10 @@ public class Interactor : MonoBehaviour
         {
             if (interactable != null) interactable = null;
             if (_interactionPromptUI.isDisplayed) _interactionPromptUI.Close();
+        }
+        if (Keyboard.current.xKey.wasPressedThisFrame)
+        {
+            this.gameObject.transform.position = _currentCheckpoint.position;
         }
     }
     public void RideObject(GameObject follow)

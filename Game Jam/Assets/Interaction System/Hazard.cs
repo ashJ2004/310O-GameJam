@@ -15,6 +15,7 @@ public class Hazard : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Colliding With: " + other.gameObject.name);
         if (other.gameObject.CompareTag("Player"))
         {
             if (playerController.isActiveAndEnabled)

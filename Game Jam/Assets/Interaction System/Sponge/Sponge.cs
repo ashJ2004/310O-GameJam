@@ -6,6 +6,8 @@ public class Sponge : MonoBehaviour, IInteractable, IRideable
 {
     [SerializeField] private string _prompt;
     [SerializeField] public GameObject player;
+    [SerializeField] private TMPro.TextMeshProUGUI _controlText;
+    [SerializeField] private string changeText;
     public string InteractionPrompt => _prompt;
     public GameObject water;
     private bool isInWater = false;
@@ -14,6 +16,7 @@ public class Sponge : MonoBehaviour, IInteractable, IRideable
     public bool Interact(Interactor interactor)
     {
         setPlayerPosition(interactor);
+        _controlText.text = changeText;
         this.gameObject.GetComponentInParent<PlayerInput>().enabled = true;
         return true;
     }
@@ -34,6 +37,7 @@ public class Sponge : MonoBehaviour, IInteractable, IRideable
             this.GetComponentInParent<PlayerInput>().enabled = false;
             player.GetComponent<PlayerInput>().enabled = true;
             GameObject.Find("PlayerFollowCamera").GetComponent<CinemachineVirtualCamera>().Follow = player.transform.Find("PlayerCameraRoot");
+            _controlText.text = "X - Restart from last checkpoint\r\n";
         }
         if(Input.GetKey(KeyCode.F) && this.transform.parent.GetComponent<PlayerInput>().isActiveAndEnabled && isInWater && !isFull)
         {
