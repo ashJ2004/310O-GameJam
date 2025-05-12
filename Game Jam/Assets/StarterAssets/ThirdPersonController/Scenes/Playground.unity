@@ -9687,7 +9687,7 @@ MonoBehaviour:
   _prompt: Enter Toaster(E)
   player: {fileID: 634756216}
   _controlText: {fileID: 233526532}
-  changeText: Up Arrow - Raise Angle\n Down Arrow - Lower Angle\n Space - Fire Toast
+  changeText: Up Arrow - Lower Angle\n Down Arrow - Raise Angle\n Space - Fire Toast
     \n Z - Exit Toaster
 --- !u!65 &2038065002
 BoxCollider:

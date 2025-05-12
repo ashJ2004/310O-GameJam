@@ -825,13 +825,6 @@
         {
             "managedAssemblyName": "Unity.RenderPipelines.Core.Runtime.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.Rendering.ProbeVolumeBakingSet",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Unity.RenderPipelines.Core.Runtime.dll",
-            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.Rendering.ProbeVolumesOptions",
             "moduleName": "",
             "usedInScenes": []

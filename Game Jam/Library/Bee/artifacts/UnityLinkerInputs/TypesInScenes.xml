@@ -40,7 +40,6 @@
 		<type fullname="UnityEngine.InputSystem.UI.InputSystemUIInputModule" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
-		<type fullname="UnityEngine.Rendering.ProbeVolumeBakingSet" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.ProbeVolumesOptions" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerBitField" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerButton" preserve="nothing"/>
