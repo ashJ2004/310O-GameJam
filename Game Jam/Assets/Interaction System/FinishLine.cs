@@ -1,16 +1,25 @@
 using UnityEngine;
+using System.Collections;
+using UnityEngine.InputSystem;
 public class FInishLine : MonoBehaviour
 {
+    [SerializeField] private TMPro.TextMeshProUGUI _winCanvas;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
             //play end game cinematic
             Debug.Log("Timer started");
-            new WaitForSeconds(30.0f);
+            other.gameObject.GetComponent<PlayerInput>().enabled = false;
+            StartCoroutine(DelayQuit(3f));
             Debug.Log("Timer Ended");
-            QuitGame();
         }
+    }
+    private IEnumerator DelayQuit(float delay)
+    {
+        _winCanvas.text = "You Win!";
+        yield return new WaitForSeconds(delay);
+        QuitGame(); // This can be a regular void function
     }
     public void QuitGame()
     {

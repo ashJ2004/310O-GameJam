@@ -48,7 +48,9 @@ public class Interactor : MonoBehaviour
         }
         if (Keyboard.current.xKey.wasPressedThisFrame)
         {
+            this.gameObject.GetComponent<CharacterController>().enabled = false;
             this.gameObject.transform.position = _currentCheckpoint.position;
+            this.gameObject.GetComponent<CharacterController>().enabled = true;
         }
     }
     public void RideObject(GameObject follow)
